@@ -5,9 +5,9 @@
 ```txt
 server {
     listen 80;
-    server_name example.com
+    server_name example.com;
     location / {
-        proxy pass http://localhost:<port>
+        proxy_pass http://localhost:<port>;
     }
 }
 ```
