@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+    traefik:
+        image: traefik:v3.5
+        container_name: traefik
+        restart: unless-stopped
+        security_opt:
+            - no-new-privileges:true
+        networks:
+            - frontend
+        ports:
+            - "80:80"
+            - "443:443"
+        command:
+            - --api=false
+
+            - --providers.docker=true
+            - --providers.docker.exposedbydefault=false
+            - --providers.docker.network=frontend
+
+            - --entrypoints.web.address=:80
+            - --entrypoints.web.http.redirections.entrypoint.to=websecure
+            - --entrypoints.web.http.redirections.entrypoint.scheme=https
+            - --entrypoints.websecure.address=:443
+
+            - --certificatesresolvers.letsencrypt.acme.httpchallenge=true
+            - --certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web
+            - --certificatesresolvers.letsencrypt.acme.email=yy@wakimae.com
+            - --certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json
+
+            - --log.level=INFO
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+            - ./letsencrypt:/letsencrypt
+
+networks:
+    frontend:
+        external: true
