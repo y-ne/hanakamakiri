@@ -1,0 +1,31 @@
+services:
+    wg-easy:
+        image: ghcr.io/wg-easy/wg-easy
+        container_name: wg-easy
+        restart: unless-stopped
+        cap_add:
+            - NET_ADMIN
+            - SYS_MODULE
+        sysctls:
+            - net.ipv4.conf.all.src_valid_mark=1
+            - net.ipv4.ip_forward=1
+        volumes:
+            - ./data:/etc/wireguard
+        ports:
+            - "51820:51820/udp"
+        environment:
+            - WG_HOST=wg.wakimae.com
+            - "PASSWORD_HASH=$$2a$$12$$yodObwdqKmLn08DtvkcXLeNJuOtsWz35C8cGaMPz2PQm7p3hbbooi"
+        networks:
+            - frontend
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.wg-easy.rule=Host(`wg.wakimae.com`)"
+            - "traefik.http.routers.wg-easy.entrypoints=websecure"
+            - "traefik.http.routers.wg-easy.tls.certresolver=letsencrypt"
+            - "traefik.http.routers.wg-easy.service=wg-easy"
+            - "traefik.http.services.wg-easy.loadbalancer.server.port=51821"
+
+networks:
+    frontend:
+        external: true
