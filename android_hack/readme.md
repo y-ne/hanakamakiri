@@ -23,6 +23,8 @@ Re-walwack # System Ad Block
 Zygisk Next # Standalone Zygisk ( if you use other than magisk )
 Shamiko # Bypass app detection
 Zygisk - LSPosed Mod # LSPosed Module that work on Android 15 (had no idea about this)
+BusyBox
+ToyBox-Ext
 ```
 
 LSPosed Modules :
@@ -31,4 +33,14 @@ LSPosed Modules :
 Hide My Applist # Further bypass app detection
 BootloaderSpoofer # Some app doesn't like your Bootloader get unlocked
 SoftApHelper # Help getting static ip on Android 9+
+```
+
+Apps :
+
+```
+F-Droid
+Termux
+Termux:Boot
+Termux:Tasker
+Tasker
 ```
