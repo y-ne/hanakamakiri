@@ -1,0 +1,49 @@
+services:
+    redis:
+        image: redis:8.4-alpine
+        networks:
+            - frontend
+        volumes:
+            - redis_data:/data
+        command: >
+            redis-server
+            --appendonly yes
+            --appendfsync everysec
+            --save 900 1
+            --save 300 10
+            --save 60 10000
+            --maxmemory 2gb
+            --maxmemory-policy noeviction
+            --requirepass wakimae
+            --tcp-keepalive 60
+            --slowlog-log-slower-than 10000
+            --slowlog-max-len 128
+            --maxclients 10000
+        deploy:
+            replicas: 1
+            placement:
+                constraints:
+                    - node.role == manager
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 3
+            resources:
+                limits:
+                    memory: 2.5G
+                reservations:
+                    memory: 2G
+            labels:
+                - "traefik.enable=false"
+        healthcheck:
+            test: ["CMD", "redis-cli", "-a", "wakimae", "ping"]
+            interval: 10s
+            timeout: 3s
+            retries: 3
+
+networks:
+    frontend:
+        external: true
+
+volumes:
+    redis_data:
