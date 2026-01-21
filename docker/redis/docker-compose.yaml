@@ -1,0 +1,36 @@
+services:
+    redis:
+        image: redis:8.4-alpine
+        container_name: redis
+        networks:
+            - frontend
+        volumes:
+            - redis_data:/data
+        command: >
+            redis-server
+            --appendonly yes
+            --appendfsync everysec
+            --save 900 1
+            --save 300 10
+            --save 60 10000
+            --maxmemory 2gb
+            --maxmemory-policy noeviction
+            --tcp-keepalive 60
+            --slowlog-log-slower-than 10000
+            --slowlog-max-len 128
+            --maxclients 10000
+        restart: unless-stopped
+        healthcheck:
+            test: ["CMD", "redis-cli", "ping"]
+            interval: 10s
+            timeout: 3s
+            retries: 3
+        mem_limit: 2.5g
+        mem_reservation: 2g
+
+networks:
+    frontend:
+        external: true
+
+volumes:
+    redis_data:
