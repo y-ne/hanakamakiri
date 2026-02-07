@@ -1,0 +1,21 @@
+services:
+    caddy:
+        image: caddy:2.11-alpine
+        restart: unless-stopped
+        ports:
+            - "80:80"
+            - "443:443"
+            - "443:443/udp"
+        volumes:
+            - ./conf:/etc/caddy
+            - ./site:/srv
+            - caddy_data:/data
+            - caddy_config:/config
+
+networks:
+    frontend:
+        external: true
+
+volumes:
+    caddy_data:
+    caddy_config:
