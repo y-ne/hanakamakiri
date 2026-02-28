@@ -14,3 +14,14 @@ gcloud config get project
 # Switch active project
 gcloud config set project PROJECT_ID
 ```
+
+```bash
+# Configuration
+gcloud config configurations list
+
+# Create
+gcloud config configurations create wakimae
+
+# Switch
+gcloud config configurations activate wakimae
+```
