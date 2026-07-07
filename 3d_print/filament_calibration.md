@@ -78,18 +78,26 @@ PolyLite PETG that i calibrate defaulted at `0.95`, so just add the value from t
 ## Bambu Test
 
 # Calibration 1
-Plate Number 5
+Plate Number 0
 
 # Calibration 2
-Plate Number -4
+Plate Number -1
+Plate Number -2
 
 ## Actual Flow
 
 # Calibration 1
-1.029
+0.95
 
 # Calibration 2
-0.987840
+0.940500
+0.931000
+```
+
+Retraction Distance
+
+```
+0.2 - 0.3 mm
 ```
 
 ## Elegoo
