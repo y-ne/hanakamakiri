@@ -31,12 +31,12 @@ Retraction distance when cut
 
 ## Polymaker
 
-### Polymaker PolyLite PETG Grey
+### Polymaker PolyLite PETG Grey | 24/7 Dryer | 65 °C | <20% Humidity
 
 Nozzle Temperature
 
 ```
-
+245 °C
 ```
 
 ## Elegoo
