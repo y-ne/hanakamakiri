@@ -27,7 +27,7 @@ Retraction distance when cut
 18 - 20 mm
 ```
 
-# 0.4 mm Nozzle
+# Bambu Stainless Steel 0.4 mm Nozzle
 
 ## Polymaker
 
