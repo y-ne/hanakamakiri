@@ -41,6 +41,14 @@ Nozzle Temperature
 245 °C
 ```
 
+Max Flow (26.8 mm)
+
+```
+100% 18.42 mm³/s
+90% 16.578 mm³/s
+80% 14.736 mm³/s
+```
+
 ## Elegoo
 
 ### Elegoo PLA White
