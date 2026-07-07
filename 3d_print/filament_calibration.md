@@ -6,7 +6,14 @@ Calibration was doing in this order, based on `Factorian Designs`
 
 -- Pressure Advance
 
+on Bambu Studio, the menu is on `Calibration` > `Manage Result` > `Factor K`
+then `Device` > `Click Filament` > `PA Profile`
+
 -- Flow Ratio
+
+Bambu Studio offer manual calibration under `Calibration` > `Flow Rate` menu
+
+Generic PLA that i calibrate defaulted at `0.98`, so just add the value from the test
 
 -- Retraction Distance
 
@@ -33,8 +40,13 @@ Max Flow (25.6 mm)
 
 Pressure Advance
 
-on Bambu Studio, the menu is on `Calibration` > `Manage Result` > `Factor K`
-
 ```
 0.02
 ```
+
+Flow Rate
+
+```
+```
+
+Retraction Distance
