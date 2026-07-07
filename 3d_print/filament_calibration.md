@@ -49,6 +49,12 @@ Max Flow (26.8 mm)
 80% 14.736 mm³/s
 ```
 
+Pressure Advance
+
+```
+0.045
+```
+
 ## Elegoo
 
 ### Elegoo PLA White
@@ -65,12 +71,6 @@ Max Flow (25.6 mm)
 100% 17,82 mm³/s
 90% 16.038 mm³/s
 80% 14.256 mm³/s
-```
-
-Pressure Advance
-
-```
-0.045
 ```
 
 Pressure Advance
