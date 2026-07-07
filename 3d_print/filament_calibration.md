@@ -61,8 +61,6 @@ Plate Number -4
 1.029
 
 # Calibration 2
-
-```
 0.987840
 ```
 
