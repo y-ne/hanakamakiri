@@ -47,6 +47,25 @@ Pressure Advance
 Flow Rate
 
 ```
+## Bambu Test
+
+# Calibration 1
+Plate Number 5
+
+# Calibration 2
+Plate Number -4
+
+## Actual Flow
+
+# Calibration 1
+1.029
+
+# Calibration 2
 ```
+0.987840
 
 Retraction Distance
+
+```
+0.4 mm
+```
