@@ -29,6 +29,16 @@ Retraction distance when cut
 
 # 0.4 mm Nozzle
 
+## Polymaker
+
+### Polymaker PolyLite PETG Grey
+
+Nozzle Temperature
+
+```
+
+```
+
 ## Elegoo
 
 ### Elegoo PLA White
