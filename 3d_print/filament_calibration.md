@@ -35,6 +35,10 @@ Retraction distance when cut
 
 ### Polymaker PolyLite PETG Grey | 24/7 Dryer | 65 °C | <20% Humidity
 
+Fan
+
+keep the fan off or just use low speed like `10%` to `30%`
+
 Nozzle Temperature
 
 ```
