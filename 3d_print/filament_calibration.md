@@ -9,6 +9,8 @@ Calibration was doing in this order, based on `Factorian Designs`
 on Bambu Studio, the menu is on `Calibration` > `Manage Result` > `Factor K`
 then `Device` > `Click Filament` > `PA Profile`
 
+Note : Disable `Flow Dynamic Calibration` when printing on this point onward
+
 -- Flow Ratio
 
 Bambu Studio offer manual calibration under `Calibration` > `Flow Rate` menu
