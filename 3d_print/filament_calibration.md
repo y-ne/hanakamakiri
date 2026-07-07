@@ -70,6 +70,12 @@ Max Flow (25.6 mm)
 Pressure Advance
 
 ```
+0.045
+```
+
+Pressure Advance
+
+```
 0.02
 ```
 
