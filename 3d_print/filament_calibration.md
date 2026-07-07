@@ -17,6 +17,15 @@ Generic PLA that i calibrate defaulted at `0.98`, so just add the value from the
 
 -- Retraction Distance
 
+# Global
+
+Long retraction when cut (experimental)
+
+Retraction distance when cut
+
+```
+18 - 20 mm
+```
 
 # 0.4 mm Nozzle
 
