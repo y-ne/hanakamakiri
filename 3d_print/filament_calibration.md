@@ -15,8 +15,6 @@ Note : Disable `Flow Dynamic Calibration` when printing on this point onward
 
 Bambu Studio offer manual calibration under `Calibration` > `Flow Rate` menu
 
-Generic PLA that i calibrate defaulted at `0.98`, so just add the value from the test
-
 -- Retraction Distance
 
 # Global
@@ -39,6 +37,19 @@ Fan
 
 keep the fan off or just use low speed like `10%` to `30%`
 
+```
+# Initate Layer Fan
+For the first 0 layers | Fan speed 0%
+Linear ramp up to 0 layers
+Min fan speed threshold Fan speed 0% | Layer time 20s
+Max fan speed threshold Fan speed 20% | Layer time 6s
+Keep fan always on unchecked
+
+Cooling overhang threshold 10%
+Overhang threshold for participating cooling 25%
+Fan speed for overhang 25%
+```
+
 Nozzle Temperature
 
 ```
@@ -57,6 +68,28 @@ Pressure Advance
 
 ```
 0.045
+```
+
+Flow Rate
+
+PolyLite PETG that i calibrate defaulted at `0.95`, so just add the value from the test
+
+```
+## Bambu Test
+
+# Calibration 1
+Plate Number 5
+
+# Calibration 2
+Plate Number -4
+
+## Actual Flow
+
+# Calibration 1
+1.029
+
+# Calibration 2
+0.987840
 ```
 
 ## Elegoo
@@ -84,6 +117,8 @@ Pressure Advance
 ```
 
 Flow Rate
+
+Generic PLA that i calibrate defaulted at `0.98`, so just add the value from the test
 
 ```
 ## Bambu Test
