@@ -33,6 +33,8 @@ Max Flow (25.6 mm)
 
 Pressure Advance
 
+on Bambu Studio, the menu is on `Calibration` > `Manage Result` > `Factor K`
+
 ```
 0.02
 ```
