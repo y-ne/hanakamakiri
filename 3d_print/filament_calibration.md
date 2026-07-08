@@ -151,3 +151,13 @@ Retraction Distance
 ```
 0.4 mm
 ```
+
+Support
+
+```
+Threshold Angle
+30 - Factory Standard
+20 - Close up noticeable
+10 - Okay
+0 - probably not
+```
