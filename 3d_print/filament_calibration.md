@@ -128,6 +128,16 @@ Pressure Advance
 0.02
 ```
 
+Flow Rate
+
+```
+# 1st Calibration
+0.987000
+
+# 2nd Calibration
+
+```
+
 ## Elegoo
 
 ### Elegoo PLA White
