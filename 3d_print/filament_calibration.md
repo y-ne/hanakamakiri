@@ -100,6 +100,32 @@ Retraction Distance
 0.2 - 0.3 mm
 ```
 
+## Creality
+
+### Creality CR-PETG Black
+
+Nozzle Temperature
+
+CR-PETG had good temp result that stringing happen at 260, overhang is acceptable at 240.
+
+```
+255 °C
+```
+
+Max Flow
+
+layer print perfectly on 5-20 test @255, so i bump it up at 20-40.
+
+```
+100% 28,49 mm³/s
+90% 25,641 mm³/s
+80% 22,792 mm³/s
+```
+
+```
+
+```
+
 ## Elegoo
 
 ### Elegoo PLA White
