@@ -122,8 +122,10 @@ layer print perfectly on 5-20 test @255, so i bump it up at 20-40.
 80% 22,792 mm³/s
 ```
 
-```
+Pressure Advance
 
+```
+0.02
 ```
 
 ## Elegoo
